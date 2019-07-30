@@ -1,0 +1,39 @@
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.testSubject {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    display: flex;
+    margin: 10px;
+
+}
+
+@keyframes fadeout {
+ from {
+     opacity: 1;
+ }
+ to {
+     opacity: 0;
+ }
+}
+
+@keyframes rotate180 {
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.opacityTestSubject {
+animation: fadeout 2s 0s infinite linear alternate,
+ rotate180 2s 2s infinite linear alternate
+}
+
+.rotateTestSubject {
+   animation: rotate180 2s 2s infinite linear alternate
+}
